@@ -7,6 +7,7 @@ import (
 	"github.com/gomodule/redigo/redis"
 	"github.com/iitheo/theopokemon/pkg/app/config/dbconfigs"
 	"github.com/iitheo/theopokemon/pkg/app/models/pokemonmodels"
+	"github.com/iitheo/theopokemon/pkg/app/services/pokemonservices"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -91,7 +92,7 @@ func FetchPokemonSpecies(IdOrName string) (pokemonData pokemonmodels.PokemonSpec
 		return resultPokemonData, nil
 	}
 
-	translatedInfo, err := TranslateDescription(fetchedPokemonData.FlavorTextEntries[0].FlavorText, translationType)
+	translatedInfo, err := pokemonservices.TranslateDescription(fetchedPokemonData.FlavorTextEntries[0].FlavorText, translationType)
 	resultPokemonData.IsLegendary = fetchedPokemonData.IsLegendary
 	resultPokemonData.Habitat = fetchedPokemonData.Habitat.Name
 	resultPokemonData.Name = fetchedPokemonData.Name
