@@ -1,0 +1,2 @@
+# mypokemon
+Fun Pokemon API
