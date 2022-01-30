@@ -19,7 +19,7 @@ Ensure you are in the same path as the Dockerfile
 docker build -t mypokemonapp:1 .
 This will build the docker image.
 Next run the docker container by running the command
-docker run -dp 8081:8081 mypokemon:1
+docker run -dp 8081:8081 mypokemonapp:1
 
 4. Now, you have the app running.
 
