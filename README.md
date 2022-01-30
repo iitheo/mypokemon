@@ -3,30 +3,28 @@
 * Pokemon API
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-## How do I get set up? ##
-### Requirements: ###
-Ensure you have docker installed in your computer.
+# How do I get set up? #
+## Requirements: ##
+1. Ensure you have docker installed on your computer.
 
-### Steps to Start App ###
-Next build your docker image.
+2. Start up docker on your computer.
+
+## Steps to Start App ##
+### Next build your docker image. ###
+
 To build your docker image:
-1. Open your Terminal
-Clone the app from the github repo by running the command:
-git clone https://github.com/iitheo/mypokemon.git
-2. Navigate to the directory where the app has been cloned or downloaded.
-Ensure you are in the same path as the Dockerfile
-3. Next run the command:
-docker build -t mypokemonapp:1 .
-This will build the docker image.
-Next run the docker container by running the command
-docker run -dp 8081:8081 mypokemonapp:1
-
-4. Now, you have the app running.
-
-Open your browser or Postman.
-localhost:8081/v1/pokemon/get/misdreavus
-
-You will get a response like this or something similar:
+1. Open your Terminal. Clone the app from the github repo by running the command below.
+2. git clone https://github.com/iitheo/mypokemon.git
+3. Navigate to the root path of the app. This is the same path as the Dockerfile. Run ls in your terminal and verify you can see the Dockerfile
+4. Build the docker image by running the command below:
+5. docker build -t mypokemonapp:1 .
+6. This will build the docker image.
+7. Next run the docker container by running the command below:
+8. docker run -dp 8081:8081 mypokemonapp:1
+9. Now, you have the app running.
+10. Open your browser or Postman.
+11. type this localhost:8081/v1/pokemon/get/misdreavus
+12. You will get a response like this or something similar:
 
 {
 "data": {
