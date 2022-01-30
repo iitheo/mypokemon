@@ -4,7 +4,7 @@
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 You can quickly test the app with the url:
-https://theomypokemon.herokuapp.com/v1/pokemon/get/1
+https://theomypokemon.herokuapp.com/v1/pokemon/get/misdreavus
 
 # How do I get set up? #
 ## Requirements: ##
