@@ -3,22 +3,25 @@
 * Pokemon API
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
-Requirements:
+## How do I get set up? ##
+### Requirements: ###
 Ensure you have docker installed in your computer.
-Next build your docker image and run the app.
+
+### Steps to Start App ###
+Next build your docker image.
 To build your docker image:
-Open your Terminal
-Clone the app from the github repo.
-Navigate to the directory where the app has been cloned or downloaded.
+1. Open your Terminal
+Clone the app from the github repo by running the command:
+git clone https://github.com/iitheo/mypokemon.git
+2. Navigate to the directory where the app has been cloned or downloaded.
 Ensure you are in the same path as the Dockerfile
-Next run the command:
-docker build -t mypokemon:1 .
+3. Next run the command:
+docker build -t mypokemonapp:1 .
 This will build the docker image.
 Next run the docker container by running the command
 docker run -dp 8081:8081 mypokemon:1
 
-Now, you have the app running.
+4. Now, you have the app running.
 
 Open your browser or Postman.
 localhost:8081/v1/pokemon/get/misdreavus
@@ -40,21 +43,14 @@ You will get a response like this or something similar:
 
 CONGRATULATIONS!!!
 
+### The following documents are provided: ###
 
-
-
-
-
-The following documents are provided:
-
-Postman documentation
+### Postman documentation ###
 https://www.getpostman.com/collections/02ec0f5ec7b0e4833f7b
-
-Start Up Steps
-
 
 Postman Documentation
 6 endpoints are listed together with sample request and response.
+
 The first 5 endpoints provide context on the pokemon api and also
 provides sample data to test the MyPokemon App.
 
